@@ -19,7 +19,7 @@ section {
     align-items: center;
 }
 
-section>div {
+section > div {
     display: flex;
     align-items: center;
 }
@@ -49,7 +49,8 @@ a {
         transition: width 0.3s ease-in-out;
     }
 
-    &:hover {
+    &:hover,
+    &.active { // Aktivierte Sektion bleibt farbig
         color: #4396AD;
 
         &::after {

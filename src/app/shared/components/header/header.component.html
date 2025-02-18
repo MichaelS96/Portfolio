@@ -4,9 +4,9 @@
             <img src="./../../../../assets/img/header/logo.png" alt="">
         </div>
         <div class="header-a">
-            <a href="#aboutme">About Me</a>
-            <a href="">Skills</a>
-            <a href="">Portfolio</a>
+            <a href="#aboutMe" [class.active]="isActive('aboutMe')">About Me</a>
+            <a href="#mySkills" [class.active]="isActive('mySkills')">Skills</a>
+            <a href="#myPortfolio" [class.active]="isActive('myPortfolio')">Portfolio</a>
         </div>
     </section>
 </header>
