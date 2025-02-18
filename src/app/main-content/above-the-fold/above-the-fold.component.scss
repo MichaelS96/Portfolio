@@ -59,7 +59,7 @@ section {
 
     &:hover {
         transform: scale(1.1);
-        background-color: #494972;
+        background-color: #9747FF;
         cursor: pointer;
     }
 }
@@ -87,4 +87,8 @@ section {
             cursor: pointer;
         }
     }
+}
+
+.scroll-down {
+    margin-right: 100px;
 }
