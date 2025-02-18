@@ -14,7 +14,7 @@ h4 {
 
 .skills {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     color: white;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ h4 {
     z-index: 80;
 }
 
-.skillsSektion {
+.skills-sektion {
     padding-left: 100px;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,19 @@ h4 {
     z-index: 80;
 }
 
-.skillsRow {
+.skills-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  // Optional: Abstand zwischen dem Titel und dem Bild
+}
+
+.skills-headline img {
+    margin-top: 80px;
+    height: 100%;
+}
+
+.skills-row {
     display: flex;
     gap: 80px;
     width: 562px;
@@ -75,16 +87,16 @@ h4 {
     gap: 8px;
 }
 
-.skillsText {
+.skills-text {
     max-width: 560px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     z-index: 80;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
-.talkBtn {
+.talk-btn {
     padding: 15px 30px;
     border: 0;
     width: 200px;
