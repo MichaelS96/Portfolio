@@ -1,1 +1,32 @@
-<section>hallo</section>
+<section id="skills" class="skills">
+    <div class="skillsSektion" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
+        <div class="skillsRow">
+            @for (skill of skills; track $index) {
+            <div>
+                <img class="skill-image" src="{{skill.image}}" alt="{{skill.name}}">
+                <p class="skill-name">{{skill.name}}</p>
+            </div>
+            }
+        </div>
+    </div>
+    <div class="skillsText">
+        <div class="skillsHeadline">
+            <h2>Skills</h2>
+        </div>
+        <span>
+            Meine Reise hat mich dazu geführt, an vielfältigen Projekten zu arbeiten und dabei eine breite Palette von
+            Frontend-Technologien und Konzepten einzusetzen. Ich bin offen dafür, neue Technologien und Methoden zu
+            nutzen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt
+            der Webentwicklung am Puls der Zeit zu bleiben.
+        </span>
+        <div class="looking">
+            <h3>Suche nach</h3>
+            <h4>anderen Skills?</h4>
+        </div>
+        <span>
+            Gerne kannst Du mich kontaktieren. Ich freue mich darauf, mein Wissen weiter auszubauen.
+        </span>
+
+        <button id="talkBtn" class="talkBtn">Get in touch</button>
+    </div>
+</section>
