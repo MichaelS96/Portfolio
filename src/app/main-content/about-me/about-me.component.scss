@@ -1,0 +1,72 @@
+h2 {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.about-me {
+    max-width: 1920px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 1920px;
+        height: 400px;
+        background-image: url('/assets/img/background/about-me-bow.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+}
+
+.about-me-content {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 7;
+}
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.attribute {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    z-index: 9;
+
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+    }
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.2s ease-in-out;
+}
