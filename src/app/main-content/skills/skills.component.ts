@@ -22,8 +22,16 @@ export class SkillsComponent {
       name: 'JavaScript'
     },
     {
+      image: './assets/img/skills/api.png',
+      name: 'Rest Api'
+    },
+    {
       image: './assets/img/skills/angular.png',
       name: 'Angular'
+    },
+    {
+      image: './assets/img/skills/git.png',
+      name: 'Git'
     },
     {
       image: './assets/img/skills/materialdesign.png',
