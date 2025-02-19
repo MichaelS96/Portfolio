@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./shared/components/header/header.component";
 // import { AboveTheFoldComponent } from "./main-content/above-the-fold/above-the-fold.component";
-// import { HeaderComponent } from "./shared/components/header/header.component";
 // import { AboutMeComponent } from "./main-content/about-me/about-me.component";
 // import { SkillsComponent } from "./main-content/skills/skills.component";
 // import { PortfolioComponent } from "./main-content/portfolio/portfolio.component";
-import { MainContentComponent } from "./main-content/main-content.component";
-// import { HeaderComponent } from "./shared/components/header/header.component";
+// import { MainContentComponent } from "./main-content/main-content.component";
+
 
 @Component({
   selector: 'app-root',
@@ -15,14 +15,13 @@ import { MainContentComponent } from "./main-content/main-content.component";
   imports: [
     CommonModule,
     RouterOutlet,
+    HeaderComponent,
     // AboveTheFoldComponent,
-    // HeaderComponent,
     // AboutMeComponent,
     // SkillsComponent,
     // PortfolioComponent,
-    MainContentComponent,
-    // HeaderComponent
-],
+    // MainContentComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
