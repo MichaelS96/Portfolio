@@ -1,49 +1,78 @@
-import { Component, HostListener, ChangeDetectorRef } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
+
 export class HeaderComponent {
-  activeSection: string = ''; // Standardwert setzen
+  isDropdownVisible = false;
+  isGermanChecked = false;
+  activeSection: string = '';
 
-  constructor(private cdr: ChangeDetectorRef) {}
-
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    const sections = [
-      { id: 'aboutMe', element: document.getElementById('aboutMe') },
-      { id: 'mySkills', element: document.getElementById('mySkills') },
-      { id: 'myPortfolio', element: document.getElementById('myPortfolio') }
-    ];
-
-    const scrollPosition = window.scrollY + 150; // Offset für fixiertes Header-Element
-    let foundActive = false;
-
-    for (let section of sections) {
-      if (section.element) {
-        const offsetTop = section.element.offsetTop;
-        const offsetHeight = section.element.offsetHeight;
-
-        if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-          this.activeSection = section.id;
-          foundActive = true;
-          break; // Stoppe die Schleife, sobald eine aktive Sektion gefunden wurde
-        }
-      }
-    }
-
-    if (!foundActive) {
-      this.activeSection = ''; // Falls keine Sektion aktiv ist, zurücksetzen
-    }
-
-    this.cdr.detectChanges(); // Erzwinge Aktualisierung, damit Angular die Änderungen bemerkt
+  toggleDropdown() {
+    this.isDropdownVisible = !this.isDropdownVisible;
   }
 
-  isActive(section: string): boolean {
-    return this.activeSection === section;
+  ngOnInit() {
+    this.setActiveSection();
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    this.setActiveSection();
+  }
+
+  setActiveSection() {
+    const sections = document.querySelectorAll('section[id]');
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
+      const viewportHeight = window.innerHeight;
+
+      if (sectionTop <= viewportHeight / 2 && sectionBottom >= viewportHeight / 2) {
+        currentSectionId = section.getAttribute('id') || '';
+      }
+    });
+
+    this.activeSection = currentSectionId;
+  }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerOffset = 130;
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  scrollToSectionDropdown(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const header = document.querySelector('header');
+      const headerOffset = header ? header.clientHeight : 130;
+
+      const elementPosition = section.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    this.toggleDropdown();
   }
 }

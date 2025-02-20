@@ -7,25 +7,26 @@ header {
     background-color: #141D2F;
     z-index: 1000;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1920px;
 }
 
 section {
     display: flex;
-    width: 95%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 30px;
+}
 
-    > div {
-        display: flex;
-        align-items: center;
+header>section>div {
+    display: flex;
+    align-items: center;
+}
 
-        img {
-            padding-left: 30px;
-        }
-    }
+img {
+    padding-left: 30px;
 }
 
 .header-a {
@@ -49,13 +50,13 @@ a {
         left: 0;
         width: 0;
         height: 4px;
-        background-color: #4396AD;
+        background-color: #00BEE8;
         transition: width 0.3s ease-in-out;
     }
 
     &:hover,
     &.active {
-        color: #4396AD;
+        color: #00BEE8;
 
         &::after {
             width: 100%;

@@ -1,72 +1,206 @@
-h2 {
-    font-size: 80px;
-    margin-bottom: 0;
-}
-
 .about-me {
     max-width: 1920px;
-    height: 90vh;
+    width: 100vw;
+    height: 100%;
     color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 200px;
     position: relative;
-    overflow: hidden;
-
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 1920px;
-        height: 500px;
-        background-image: url('/assets/img/background/about-me-bow.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 1;
-    }
 }
 
 .about-me-content {
     margin-left: 100px;
     margin-right: 100px;
-    width: 470px;
+    width: 471px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     z-index: 7;
 }
 
-.attributes {
+.icons {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.attribute {
+.icon {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 40px;
     z-index: 9;
+}
 
-    img {
-        width: 40px;
-        height: 40px;
-        object-fit: contain;
-        transition: transform 0.2s ease-in-out;
+.photo-me {
+    position: relative;
+}
+
+.photo-me>img.me {
+    margin-top: 120px;
+    margin-right: 100px;
+    width: 700px;
+    position: relative;
+    z-index: 2;
+    transition: margin 0.2s ease-in-out;
+}
+
+.photo-me .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: top 0.2s ease-in-out;
+}
+
+.background {
+    position: absolute;
+    top: 550px;
+    width: 100vw;
+    max-width: 1920px;
+    z-index: 3;
+
+    >img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.icon img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1500px) {
+    .about-me-content {
+        gap: 20px;
+        width: 400px;
+        margin-right: 0;
     }
 
-    &:hover {
-        img {
-            transform: scale(1.2);
+    .photo-me {
+        >img.me {
+            width: 550px;
+        }
+    }
+
+    .about-me-content {
+        >span {
+            font-size: 14px;
+            z-index: 80;
+        }
+    }
+
+    .icon {
+        >span {
+            font-size: 14px;
+        }
+    }
+
+    .background {
+        top: 550px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .photo-me {
+        >img.me {
+            margin-right: 0px;
+        }
+    }
+
+    .about-me-content {
+        >span {
+            font-size: 12px;
+        }
+    }
+
+    .icon {
+        gap: 20px;
+
+        >img {
+            width: 30px;
+        }
+
+        >span {
+            font-size: 12px;
         }
     }
 }
 
-img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    transition: transform 0.2s ease-in-out;
+@media (max-width: 960px) {
+    .about-me {
+        margin-top: 200px;
+        flex-direction: column-reverse;
+    }
+
+    .photo-me {
+        >img.me {
+            margin-top: 20px;
+        }
+    }
+
+    .about-me-content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%;
+    }
+
+    .background {
+        top: 450px;
+    }
+
+    .about-me-content {
+        >span {
+            font-size: 16px;
+        }
+    }
+
+    .icon {
+        gap: 20px;
+
+        >span {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-me {
+        >img.me {
+            margin-top: 20px;
+            width: 300px;
+        }
+    }
+
+    .green {
+        top: 1900px;
+    }
+
+    .background {
+        top: 250px;
+    }
+
+    .about-me-content {
+        width: 280px;
+    }
+
+    .about-me-content {
+        >span {
+            font-size: 13px;
+        }
+    }
+
+    .icon {
+        >span {
+            font-size: 13px;
+        }
+    }
 }

@@ -26,8 +26,18 @@ export class ProjectComponent {
       type: 'JavaScript | HTML | CSS',
       description: 'Springen, Laufen und Werfen ein Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
       link: {
-        liveTest: '',
+        liveTest: '/',
         github: 'https://github.com/MichaelS96/El-Pollo-Loco',
+      },
+    },
+    {
+      name: 'Joyn',
+      image: './assets/img/projects/joyn.png',
+      type: 'JavaScript | HTML | CSS | Angular',
+      description: '',
+      link: {
+        liveTest: '',
+        github: '',
       },
     },
   ]

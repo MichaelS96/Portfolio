@@ -36,7 +36,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;  // Optional: Abstand zwischen dem Titel und dem Bild
+    gap: 20px;
 }
 
 .skills-headline img {
@@ -46,25 +46,26 @@ h4 {
 
 .skills-row {
     display: flex;
-    gap: 80px;
-    width: 562px;
+    gap: 100px;
+    width: 100%;
     max-width: 100%;
     flex-wrap: wrap;
     z-index: 80;
+    justify-content: center;
 
-    > div {
+    >div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        width: 80px;
-        height: 80px;
+        gap: 15px;
+        width: auto;
+        height: auto;
     }
 }
 
 .skill-image {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     transition: transform 0.4s ease, filter 0.4s ease, rotate 0.4s ease;
 
     &:hover {
@@ -78,13 +79,18 @@ h4 {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .looking {
     display: flex;
     align-items: center;
     gap: 8px;
+
+    h3,
+    h4 {
+        font-size: 28px;
+    }
 }
 
 .skills-text {
@@ -110,5 +116,81 @@ h4 {
         transform: scale(1.1);
         background-color: #9747FF;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 1400px) {
+    .skills-row {
+        gap: 60px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .skills-row>div {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 960px) {
+    .skills {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .skills-sektion {
+        padding-left: 0;
+        width: 80%;
+    }
+
+    .skills-text {
+        max-width: 100%;
+        padding-right: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-text {
+        width: 280px;
+
+        >span {
+            font-size: 13px;
+        }
+    }
+
+    .talk-btn {
+        font-size: 16px;
+        width: 150px;
+    }
+
+    h2 {
+        font-size: 55px;
+    }
+
+    .skills-row {
+        gap: 40px;
+
+        >div {
+            >img {
+                width: 40px;
+                height: 40px;
+            }
+
+            >p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .looking {
+
+        h3,
+        h4 {
+            font-size: 18px;
+        }
     }
 }
