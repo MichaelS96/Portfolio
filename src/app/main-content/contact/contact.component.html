@@ -1,22 +1,54 @@
-<section class="container" id="myContact">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+<section class="contact" id="myContact">
+    <div class="header">
+        <h2 class="headline">Contact</h2>
+    </div>
+    <div class="contact-section">
+        <div class="contact-text">
+            <span>Got a problem to solve?</span>
+            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
+                your projects with my work.<br></p>
+            <p>Need a Frontend developer?<b> Contact me!</b></p>
+        </div>
 
-        <label for="name">Name</label>
-        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-input">
 
-        <label for="email">Email</label>
-        <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email.." required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+            <label for="name">Name</label>
+            <div class="input-container">
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="Your name.." required
+                    [ngClass]="{'invalid': name.invalid && name.touched, 'valid': name.valid && name.touched}">
+            </div>
 
-        <label for="message">Subject</label>
-        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Write something.."
-            style="height:200px" required></textarea>
+            @if (!name.valid && name.touched) {
+            <span class="warning">Please enter your Name</span>
+            }
 
-        @if (!message.valid && message.touched) {
-        <span>Please enter a Message</span>
-        }
 
-        <input type="submit" value="Submit">
+            <label for="email">Email</label>
+            <div class="input-container">
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Your email..." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                    [ngClass]="{'invalid': email.invalid && email.touched, 'valid': email.valid && email.touched}">
+            </div>
+            @if (!email.valid && email.touched) {
+            <span class="warning">Please enter a Email</span>
+            }
 
-    </form>
+            <label for="message">Subject</label>
+            <div class="input-container">
+                <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+                    placeholder="Your Message...." style="height:200px" required minlength="4"
+                    [ngClass]="{'invalid': message.invalid && message.touched, 'valid': message.valid && message.touched}"></textarea>
+            </div>
+
+            @if (!message.valid && message.touched) {
+            <span class="warning">Please enter a Message</span>
+            }
+
+            <input class="submit" type="submit" value="Send Message">
+        </form>
+    </div>
+
+
+
 </section>
