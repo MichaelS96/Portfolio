@@ -6,6 +6,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AppComponent } from '../app.component';
 import { FeedbackComponent } from './portfolio/feedback/feedback.component';
+import { ContactComponent } from "./contact/contact.component";
 
 
 @Component({
@@ -17,7 +18,8 @@ import { FeedbackComponent } from './portfolio/feedback/feedback.component';
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ContactComponent
 ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
