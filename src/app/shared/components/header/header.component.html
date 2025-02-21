@@ -3,11 +3,11 @@
         <div>
             <img src="./../../../../assets/img/header/logo.png" alt="">
         </div>
-        <div class="header-a">
+        <nav class="header-a">
             <a [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="scrollToSection('aboutMe')">About Me</a>
             <a [ngClass]="{'active': activeSection === 'mySkills'}" (click)="scrollToSection('mySkills')">Skills</a>
-            <a [ngClass]="{'active': activeSection === 'myPortfolio'}"
-                (click)="scrollToSection('myPortfolio')">Portfolio</a>
-        </div>
+            <a [ngClass]="{'active': activeSection === 'myPortfolio'}"(click)="scrollToSection('myPortfolio')">Portfolio</a>
+            <a [ngClass]="{'active': activeSection === 'myContact'}"(click)="scrollToSection('myContact')">Contact</a>
+        </nav>
     </section>
 </header>
