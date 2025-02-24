@@ -20,10 +20,10 @@ export class ContactComponent {
     message: '',
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://michael-schwittay.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
