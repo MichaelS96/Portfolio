@@ -45,7 +45,9 @@
             <span class="warning">Please enter a Message</span>
             }
 
-            <input class="submit" type="submit" value="Send Message">
+            <input class="submit" type="submit" value="Send Message"
+                [ngClass]="{'invalid': !contactForm.form.valid, 'valid': contactForm.form.valid}"
+                [disabled]="!contactForm.form.valid">
         </form>
     </div>
 

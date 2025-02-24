@@ -1,0 +1,158 @@
+footer {
+    height: 291px;
+    width: 98vw;
+    background-color: #141D2F;
+    border-top: 4px solid #00BEE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    max-width: 1920px;
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+
+.impressum {
+    display: none;
+}
+
+.impressum-mobile {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo>a {
+    display: inline-block;
+    /* Ändert das Verhalten, damit die Breite nur so groß wie der Inhalt ist */
+    text-decoration: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        /* Leicht nach unten verschieben */
+        left: 50%;
+        width: 0;
+        height: 4px;
+        background-color: #00BEE8;
+        transition: width 0.3s ease-in-out;
+        transform: translateX(-50%);
+    }
+
+    &:hover,
+    &.active {
+        color: #00BEE8;
+
+        &::after {
+            width: 45%;
+            /* Nur so breit wie der Text */
+        }
+    }
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+
+    >a {
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}
+
+.copyright {
+    font-size: 23px;
+}
+
+
+
+@media (max-width: 1600px) {
+    .content {
+        justify-content: space-around;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    .links {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        padding-left: 0;
+
+        >a {
+            display: none;
+        }
+    }
+
+    .impressum-mobile {
+        display: block;
+    }
+
+    .links {
+        padding-right: 0;
+    }
+
+    .impressum {
+        display: block;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background-color: #00BEE8;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover,
+        &.active {
+            color: #00BEE8;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
