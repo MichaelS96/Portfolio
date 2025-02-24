@@ -1,12 +1,10 @@
 footer {
-    height: 291px;
+    height: 250px;
     width: 98vw;
     background-color: #141D2F;
     border-top: 4px solid #00BEE8;
     display: flex;
     align-items: center;
-    justify-content: center;
-
 }
 
 .content {
@@ -35,7 +33,6 @@ footer {
 
 .logo>a {
     display: inline-block;
-    /* Ändert das Verhalten, damit die Breite nur so groß wie der Inhalt ist */
     text-decoration: none;
     color: white;
     position: relative;
@@ -48,7 +45,6 @@ footer {
         content: '';
         position: absolute;
         bottom: -2px;
-        /* Leicht nach unten verschieben */
         left: 50%;
         width: 0;
         height: 4px;
@@ -63,7 +59,6 @@ footer {
 
         &::after {
             width: 45%;
-            /* Nur so breit wie der Text */
         }
     }
 }

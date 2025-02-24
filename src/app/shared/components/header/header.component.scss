@@ -20,13 +20,24 @@ section {
     margin: 0 30px;
 }
 
-header>section>div {
+header > section > div {
     display: flex;
     align-items: center;
 }
 
 img {
     padding-left: 30px;
+}
+
+.navigation {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
 .header-a {
@@ -62,5 +73,61 @@ a {
         &::after {
             width: 100%;
         }
+    }
+}
+
+.dialog {
+    display: none; // Standardmäßig ausgeblendet
+    position: absolute;
+    top: 90px;
+    right: 0;
+    height: 98vh;
+    width: 100vw;
+    color: white;
+    font-size: 23px;
+    background-color: rgba(20, 29, 47, 0.9);
+    z-index: 5;
+}
+
+.open-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .header-a {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    .burger-menu {
+        display: block !important;
+    }
+}
+
+@media (min-width: 851px) {
+    .navigation {
+        display: none !important;
+    }
+}
+
+@media (max-width: 520px) {
+    img {
+        padding: 0;
+        width: 225px;
+    }
+
+    section {
+        margin: 0;
     }
 }

@@ -1,6 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 
 @Component({
   selector: 'app-header',
@@ -11,12 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 
 export class HeaderComponent {
-  isDropdownVisible = false;
-  isGermanChecked = false;
+  @ViewChild('dialog') dialog!: ElementRef;
+  isMenuOpen = false;
   activeSection: string = '';
 
-  toggleDropdown() {
-    this.isDropdownVisible = !this.isDropdownVisible;
+  toggleDialog() {
+    if (this.dialog) {
+      this.isMenuOpen = !this.isMenuOpen;
+      this.dialog.nativeElement.style.display = this.isMenuOpen ? 'block' : 'none';
+    }
   }
 
   ngOnInit() {
@@ -59,20 +61,8 @@ export class HeaderComponent {
     }
   }
 
-  scrollToSectionDropdown(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const header = document.querySelector('header');
-      const headerOffset = header ? header.clientHeight : 130;
-
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-    this.toggleDropdown();
+  scrollToSectionDialog(sectionId: string) {
+    this.scrollToSection(sectionId);
+    this.toggleDialog();
   }
 }

@@ -1,13 +1,28 @@
 <header>
     <section>
         <div>
-            <img src="./assets\img\header\logo.png" alt="">
+            <img src="./assets/img/header/logo.png" alt="">
         </div>
         <nav class="header-a">
-            <a [ngClass]="{'active': activeSection === 'aboutMe'}" (click)="scrollToSection('aboutMe')">About Me</a>
-            <a [ngClass]="{'active': activeSection === 'mySkills'}" (click)="scrollToSection('mySkills')">Skills</a>
-            <a [ngClass]="{'active': activeSection === 'myPortfolio'}"(click)="scrollToSection('myPortfolio')">Portfolio</a>
-            <a [ngClass]="{'active': activeSection === 'myContact'}"(click)="scrollToSection('myContact')">Contact</a>
+            <a [class.active]="activeSection === 'aboutMe'" (click)="scrollToSection('aboutMe')">About Me</a>
+            <a [class.active]="activeSection === 'mySkills'" (click)="scrollToSection('mySkills')">Skills</a>
+            <a [class.active]="activeSection === 'myPortfolio'" (click)="scrollToSection('myPortfolio')">Portfolio</a>
+            <a [class.active]="activeSection === 'myContact'" (click)="scrollToSection('myContact')">Contact</a>
         </nav>
+
+        <div class="navigation">
+            <img class="burger-menu"
+                [src]="isMenuOpen ? './assets/img/header/close-btn.png' : './assets/img/header/burger-menu.png'"
+                alt="" (click)="toggleDialog()">
+        </div>
     </section>
+
+    <div class="dialog" #dialog>
+        <div class="open-dialog">
+            <a [class.active]="activeSection === 'aboutMe'" (click)="scrollToSectionDialog('aboutMe')">About Me</a>
+            <a [class.active]="activeSection === 'mySkills'" (click)="scrollToSectionDialog('mySkills')">Skills</a>
+            <a [class.active]="activeSection === 'myPortfolio'" (click)="scrollToSectionDialog('myPortfolio')">Portfolio</a>
+            <a [class.active]="activeSection === 'myContact'" (click)="scrollToSectionDialog('myContact')">Contact</a>
+        </div>
+    </div>
 </header>

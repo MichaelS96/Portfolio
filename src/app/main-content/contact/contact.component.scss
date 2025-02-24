@@ -54,7 +54,6 @@ input[type="submit"] {
     text-align: center;
 }
 
-// Abschnitt-Styles
 section {
     position: relative;
     height: 80dvh;
@@ -67,7 +66,6 @@ section {
     padding-bottom: 150px;
 }
 
-// Kontaktsektion-Styles
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -106,12 +104,10 @@ section {
     }
 }
 
-// Warnhinweis Styles
 .warning {
     color: #ff4d4d;
 }
 
-// Responsive Media Queries
 @media (max-width: 1300px) {
     .contact-input {
         max-width: 450px;
