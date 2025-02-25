@@ -56,10 +56,11 @@ input[type="submit"] {
 
 section {
     position: relative;
-    height: 80dvh;
+    height: auto;
     width: 100vw;
     max-width: 1920px;
     margin-top: 200px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     gap: 50px;
