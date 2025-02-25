@@ -1,4 +1,35 @@
 section {
-    height: calc(99vh - 89px - 250px);
-    padding-top: 90px;
+    padding-left: 150px;
+    width: 100vw;
+    max-width: 1920px;
+    margin-top: 100px;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    h1 {
+        font-size: 44px;
+        margin: 25px 0 0 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        a {
+            color: white;
+        }
+    }
+
+    @media (max-width: 520px) {
+        padding-left: 80px;
+    }
+
+    @media (max-height: 670px) {
+        margin-bottom: 100px;
+    }
 }
