@@ -10,6 +10,21 @@ section {
     align-items: start;
     gap: 20px;
 
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .back-home-btn {
+        img {
+            width: 40px; // Passe die Größe des Bildes an
+            height: auto;
+            cursor: pointer;
+        }
+    }
+
     h1 {
         font-size: 44px;
         margin: 25px 0 0 0;
@@ -22,6 +37,12 @@ section {
     p {
         a {
             color: white;
+        }
+    }
+
+    @media (max-width: 850px) {
+        img {
+            display: none;
         }
     }
 
