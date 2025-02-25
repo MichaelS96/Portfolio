@@ -1,5 +1,6 @@
 import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router'; // <--- Importieren
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,16 @@ import { CommonModule } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-
 export class HeaderComponent {
   @ViewChild('dialog') dialog!: ElementRef;
   isMenuOpen = false;
   activeSection: string = '';
+
+  constructor(private router: Router) {} // <--- Router im Konstruktor
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
 
   toggleDialog() {
     if (this.dialog) {
