@@ -14,7 +14,7 @@ export class HeaderComponent {
   isMenuOpen = false;
   activeSection: string = '';
 
-  constructor(private router: Router) {} // <--- Router im Konstruktor
+  constructor(private router: Router) {}
 
   navigateToHome() {
     this.router.navigate(['/']);
