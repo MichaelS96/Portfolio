@@ -5,6 +5,7 @@ footer {
     border-top: 4px solid #00BEE8;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -15,7 +16,6 @@ footer {
     color: white;
     align-items: center;
 }
-
 
 .impressum {
     display: none;
@@ -98,7 +98,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .links{
+    .links {
         width: auto;
     }
 }
