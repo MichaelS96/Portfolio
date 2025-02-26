@@ -121,7 +121,7 @@ h4 {
 
 @media (max-width: 1400px) {
     .skills-row {
-        gap: 60px;
+        gap: 80px;
         width: 400px;
     }
 }
@@ -141,14 +141,16 @@ h4 {
         padding: 50px 20px;
     }
 
-    .skills-sektion {
-        padding-left: 0;
-        width: 80%;
-    }
-
     .skills-text {
         max-width: 100%;
         padding-right: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    .skills-sektion {
+        padding-left: 0;
         width: 80%;
     }
 }

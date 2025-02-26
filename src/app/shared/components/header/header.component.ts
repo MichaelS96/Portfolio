@@ -1,11 +1,13 @@
 import { Component, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router'; // <--- Importieren
+import { Router } from '@angular/router';
+import { TranslatePipe } from "@ngx-translate/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
@@ -14,7 +16,7 @@ export class HeaderComponent {
   isMenuOpen = false;
   activeSection: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private translate: TranslateService) { }
 
   navigateToHome() {
     this.router.navigate(['/']);
@@ -70,5 +72,9 @@ export class HeaderComponent {
   scrollToSectionDialog(sectionId: string) {
     this.scrollToSection(sectionId);
     this.toggleDialog();
+  }
+
+  changeLanguage(language: string) {
+    this.translate.use(language);
   }
 }

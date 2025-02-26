@@ -1,0 +1,53 @@
+{
+    "header": {
+        "me": "Über mich",
+        "skills": "Skills",
+        "portfolio": "Portfolio",
+        "contact": "Kontakt"
+    },
+    "above-the-fold": {
+        "iam": "Ich bin",
+        "job": "FRONTEND ENTWICKLER",
+        "talk-btn": "Lass uns Reden"
+    },
+    "about-me": {
+        "me": "Über mich",
+        "aboutme": "Hallo, ich bin ein Frontend-Entwickler aus Werl, Deutschland. Mit einer Leidenschaft für die grenzenlosen Möglichkeiten der IT spezialisiere ich mich darauf, ansprechende und benutzerfreundliche Websites sowie Anwendungen zu gestalten.",
+        "place": "Flexibel in meiner Arbeitsumgebung kann ich sowohl vor Ort in Werl als auch remote effektiv arbeiten.",
+        "bulb": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen stetig zu erweitern und meine Fähigkeiten zu verbessern.",
+        "puzzle": "In meinem Beruf ist Programmieren mehr als nur Code schreiben es ist eine kreative Herangehensweise an Problemlösungen. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache und benutzerfreundliche Lösungen zu verwandeln. So unterstütze ich Sie dabei, Ihre Ziele zu verwirklichen und Ihre Visionen zum Leben zu erwecken."
+    },
+    "skills": {
+        "header": "Skills",
+        "under-header": "Meine Reise hat mich dazu geführt, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und -Konzepten anzuwenden. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und im sich ständig weiterentwickelnden Bereich der Webentwicklung immer einen Schritt voraus zu bleiben.",
+        "looking": "Suche nach",
+        "another": "anderen Skills?",
+        "contact": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+        "btn": "Melden sie sich"
+    },
+    "portfolio": {
+        "under-head": "Entdecke eine Auswahl meiner Arbeiten hier. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "pokedex": "Auf Grundlage der PokéAPI, einer benutzerfreundlichen Bibliothek, die detaillierte Informationen zu Pokémon erfasst und bereitstellt.",
+        "polloloco": "Springen, rennen und werfen ein spannendes Spiel mit einem objektorientierten Konzept. Begleite Pepe auf seinem Abenteuer, sammle Münzen und scharfe Tabasco-Salsa, um dich der verrückten Henne im ultimativen Duell zu stellen!",
+        "joyn": ""
+    },
+    "feedback": {
+        "feeback-msg-1": "",
+        "feeback-msg-2": ""
+    },
+    "contact": {
+        "header": "Kontakt",
+        "problem": "Hast du ein Problem zu lösen?",
+        "cnt-me": "Kontaktiere mich über dieses Formular ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
+        "need-me": "Brauchst du einen Frontend-Entwickler?",
+        "me": "Kontaktiere mich!",
+        "name-warning": "Bitte gib deinen Namen ein",
+        "plchol-name": "Ihr Name...",
+        "email-warning": "Bitte gib eine E-Mail-Adresse ein",
+        "plchol-email": "Ihre Email...",
+        "sub": "Betreff",
+        "msg-warning": "Bitte gib eine Nachricht ein.",
+        "plchol-sub": "Ihre Nachricht...",
+        "send-btn": "Nachricht versenden"
+    }
+}

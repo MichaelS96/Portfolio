@@ -4,25 +4,45 @@
             <img src="./assets/img/header/logo.png" alt="Logo" (click)="navigateToHome()">
         </div>
         <nav class="header-a">
-            <a [class.active]="activeSection === 'aboutMe'" (click)="scrollToSection('aboutMe')">About Me</a>
-            <a [class.active]="activeSection === 'mySkills'" (click)="scrollToSection('mySkills')">Skills</a>
-            <a [class.active]="activeSection === 'myPortfolio'" (click)="scrollToSection('myPortfolio')">Portfolio</a>
-            <a [class.active]="activeSection === 'myContact'" (click)="scrollToSection('myContact')">Contact</a>
+            <a [class.active]="activeSection === 'aboutMe'"
+                (click)="scrollToSection('aboutMe')">{{'header.me'|translate}}</a>
+            <a [class.active]="activeSection === 'mySkills'"
+                (click)="scrollToSection('mySkills')">{{'header.skills'|translate}}</a>
+            <a [class.active]="activeSection === 'myPortfolio'"
+                (click)="scrollToSection('myPortfolio')">{{'header.portfolio'|translate}}</a>
+            <a [class.active]="activeSection === 'myContact'"
+                (click)="scrollToSection('myContact')">{{'header.contact'|translate}}</a>
+            <div class="translate">
+                <img src="./assets/img/header/englisch.png" alt="englisch" (click)="changeLanguage('en')">
+                <a (click)="changeLanguage('en')">EN</a>
+                <a (click)="changeLanguage('de')">DE</a>
+                <img src="./assets/img/header/germany.png" alt="deutsch" (click)="changeLanguage('de')">
+            </div>
         </nav>
 
         <div class="navigation">
             <img class="burger-menu"
-                [src]="isMenuOpen ? './assets/img/header/close-btn.png' : './assets/img/header/burger-menu.png'"
-                alt="" (click)="toggleDialog()">
+                [src]="isMenuOpen ? './assets/img/header/close-btn.png' : './assets/img/header/burger-menu.png'" alt=""
+                (click)="toggleDialog()">
         </div>
     </section>
 
     <div class="dialog" #dialog>
         <div class="open-dialog">
-            <a [class.active]="activeSection === 'aboutMe'" (click)="scrollToSectionDialog('aboutMe')">About Me</a>
-            <a [class.active]="activeSection === 'mySkills'" (click)="scrollToSectionDialog('mySkills')">Skills</a>
-            <a [class.active]="activeSection === 'myPortfolio'" (click)="scrollToSectionDialog('myPortfolio')">Portfolio</a>
-            <a [class.active]="activeSection === 'myContact'" (click)="scrollToSectionDialog('myContact')">Contact</a>
+            <a [class.active]="activeSection === 'aboutMe'"
+                (click)="scrollToSectionDialog('aboutMe')">{{'header.me'|translate}}</a>
+            <a [class.active]="activeSection === 'mySkills'"
+                (click)="scrollToSectionDialog('mySkills')">{{'header.skills'|translate}}</a>
+            <a [class.active]="activeSection === 'myPortfolio'"
+                (click)="scrollToSectionDialog('myPortfolio')">{{'header.portfolio'|translate}}</a>
+            <a [class.active]="activeSection === 'myContact'"
+                (click)="scrollToSectionDialog('myContact')">{{'header.contact'|translate}}</a>
+            <div class="translate-dialog">
+                <img src="./assets/img/header/englisch.png" alt="englisch" (click)="changeLanguage('en')">
+                <a (click)="changeLanguage('en')">EN</a>
+                <a (click)="changeLanguage('de')">DE</a>
+                <img src="./assets/img/header/germany.png" alt="deutsch" (click)="changeLanguage('de')">
+            </div>
         </div>
     </div>
 </header>

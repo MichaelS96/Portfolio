@@ -3,11 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
-// import { AboveTheFoldComponent } from "./main-content/above-the-fold/above-the-fold.component";
-// import { AboutMeComponent } from "./main-content/about-me/about-me.component";
-// import { SkillsComponent } from "./main-content/skills/skills.component";
-// import { PortfolioComponent } from "./main-content/portfolio/portfolio.component";
-// import { MainContentComponent } from "./main-content/main-content.component";
+import { TranslateService, TranslatePipe, TranslateDirective } from "@ngx-translate/core";
 
 
 @Component({
@@ -17,11 +13,17 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
-],
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'portfolio';
+
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 }
