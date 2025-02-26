@@ -4,7 +4,7 @@
     <div class="project-description">
         <span>{{ project.name }}</span>
         <p class="type">{{ project.type }}</p>
-        <p class="description">{{ project.description}}</p>
+        <p class="description">{{ project.description|translate}}</p>
         <div class="buttons">
             <a [href]="" class="live-test" target="_blank">Live test</a>
             <a [href]="project.link.github" class="github" target="_blank">Github</a>
