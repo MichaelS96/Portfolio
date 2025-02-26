@@ -40,6 +40,18 @@ input[type="submit"] {
     }
 }
 
+section {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    max-width: 1920px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .purple {
     position: absolute;
     top: -400px;
@@ -82,19 +94,6 @@ input[type="submit"] {
     }
 }
 
-section {
-    position: relative;
-    height: auto;
-    width: 100vw;
-    max-width: 1920px;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    
-}
-
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -131,19 +130,19 @@ section {
         font-size: 20px;
         font-weight: bold;
         display: flex;
-        align-items:center ;
-        padding: 5px 0 5px 0 ;
+        align-items: center;
+        padding: 5px 0 5px 0;
     }
 }
 
-.privacy-text{
+.privacy-text {
     font-size: 14px;
     padding-left: 15px;
 }
 
 input[type="checkbox"] {
     width: 20px;
-    height: 20px; 
+    height: 20px;
 }
 
 .warning {
@@ -171,10 +170,6 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 860px) {
-    section {
-        height: 110dvh;
-    }
-
     .contact-section {
         flex-direction: column;
         align-items: center;
