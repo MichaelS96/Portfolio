@@ -20,7 +20,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-    policy: false // Hinzugefügt, um die Checkbox zu steuern
+    policy: false
   }
 
   mailTest = false;

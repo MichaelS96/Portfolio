@@ -1,4 +1,4 @@
-<section class="contact" id="contact">
+<section class="contact" id="myContact">
     <div class="header">
         <h2 class="headline">{{'contact.header' | translate}}</h2>
     </div>
@@ -54,8 +54,8 @@
             </div>
 
             <input class="submit" type="submit" value="{{'contact.send-btn' | translate}}"
-                [ngClass]="{'invalid': !contactForm.form.valid, 'valid': contactForm.form.valid}"
-                [disabled]="!contactForm.form.valid">
+                [ngClass]="{'invalid': !contactForm.form.valid || !contactData.policy, 'valid': contactForm.form.valid && contactData.policy}"
+                [disabled]="!contactForm.form.valid || !contactData.policy">
         </form>
 
         <img class="purple" src="./assets/img/background/background-purple.png" alt="purple-background">
