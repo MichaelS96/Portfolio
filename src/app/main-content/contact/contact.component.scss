@@ -11,13 +11,18 @@ textarea {
     resize: vertical;
     border-radius: 10px;
     background-color: #141d2f;
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px;
+    background-size: 20px 20px;
 
     &.invalid {
         border-color: #ff4d4d;
+        background-image: url('./../../../assets/img/contact/required.png');
     }
 
     &.valid {
         border-color: #45a049;
+        background-image: url('./../../../assets/img/contact/checkmark.png');
     }
 }
 
