@@ -21,7 +21,6 @@ textarea {
     }
 }
 
-// Submit-Button Styles
 input[type="submit"] {
     background-color: #4b47ff;
     color: white;
@@ -36,7 +35,7 @@ input[type="submit"] {
     }
 }
 
-.purple{
+.purple {
     position: absolute;
     top: -400px;
     right: -400px;
@@ -59,6 +58,23 @@ input[type="submit"] {
 
 .headline {
     text-align: center;
+}
+
+.top-arrow-img {
+    display: flex;
+    justify-content: end;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    position: relative;
+
+    img {
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 section {
@@ -88,7 +104,7 @@ section {
     flex-direction: column;
     gap: 30px;
 
-    > span {
+    >span {
         font-size: 32px;
         font-weight: 700;
     }
@@ -126,7 +142,7 @@ section {
     .contact-text {
         width: 350px;
 
-        > span {
+        >span {
             font-size: 25px;
         }
     }
@@ -167,8 +183,12 @@ section {
 }
 
 @media (max-width: 500px) {
-    .contact-text > p {
+    .contact-text>p {
         font-size: 13px;
+    }
+
+    .top-arrow-img {
+        display: none;
     }
 }
 
