@@ -6,7 +6,7 @@
         <div class="contact-text">
             <span>{{'contact.problem' | translate}}</span>
             <p>{{'contact.cnt-me' | translate}}<br></p>
-            <p>{{'contact.need-me' | translate}}<b> {{'contact.me' | translate}}</b></p>
+            <p>{{'contact.need-me' | translate}}<b>{{'contact.me' | translate}}</b></p>
         </div>
 
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-input">
@@ -14,38 +14,46 @@
             <label for="name">Name</label>
             <div class="input-container">
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="{{'contact.plchol-name'|translate}}" required
+                    placeholder="{{'contact.plchol-name' | translate}}" required
                     [ngClass]="{'invalid': name.invalid && name.touched, 'valid': name.valid && name.touched}">
             </div>
-
             @if (!name.valid && name.touched) {
-            <span class="warning">{{'contact.name-warning'|translate}}</span>
+            <span class="warning">{{'contact.name-warning' | translate}}</span>
             }
-
 
             <label for="email">Email</label>
             <div class="input-container">
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="{{'contact.plchol-email'|translate}}" required
+                    placeholder="{{'contact.plchol-email' | translate}}" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                     [ngClass]="{'invalid': email.invalid && email.touched, 'valid': email.valid && email.touched}">
             </div>
             @if (!email.valid && email.touched) {
-            <span class="warning">{{'contact.email-warning'|translate}}</span>
+            <span class="warning">{{'contact.email-warning' | translate}}</span>
             }
 
-            <label for="message">{{'contact.sub'|translate}}</label>
+            <label for="message">{{'contact.sub' | translate}}</label>
             <div class="input-container">
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="{{'contact.plchol-sub'|translate}}" style="height:200px" required minlength="4"
+                    placeholder="{{'contact.plchol-sub' | translate}}" style="height:200px" required minlength="4"
                     [ngClass]="{'invalid': message.invalid && message.touched, 'valid': message.valid && message.touched}"></textarea>
             </div>
-
             @if (!message.valid && message.touched) {
-            <span class="warning">{{'contact.msg-warning'|translate}}</span>
+            <span class="warning">{{'contact.msg-warning' | translate}}</span>
             }
 
-            <input class="submit" type="submit" value="{{'contact.send-btn'|translate}}"
+            <!-- Privacy checkbox -->
+            <div class="input-container">
+                <label>
+                    <input type="checkbox" [(ngModel)]="contactData.policy" name="policy" required />
+                    <span class="privacy-text">{{'contact.privacyPolicy' | translate}}</span>
+                </label>
+                @if (!contactData.policy && contactForm.submitted) {
+                <span class="warning">{{'contact.policy-warning' | translate}}</span>
+                }
+            </div>
+
+            <input class="submit" type="submit" value="{{'contact.send-btn' | translate}}"
                 [ngClass]="{'invalid': !contactForm.form.valid, 'valid': contactForm.form.valid}"
                 [disabled]="!contactForm.form.valid">
         </form>
@@ -55,5 +63,4 @@
     <div id="goToTop" (click)="scrollToTop()" class="top-arrow-img">
         <img src="./assets/img/contact/top-arrow.png" alt="arrow-to-top">
     </div>
-    
 </section>
