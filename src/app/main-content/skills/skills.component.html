@@ -12,7 +12,6 @@
     <div class="skills-text">
         <div class="skills-headline">
             <h2>{{'skills.header'|translate}}</h2>
-            <!-- <img src="./assets/img/skills/seperator-blue.png" alt=""> -->
         </div>
         <span>
             {{'skills.under-header'|translate}}
@@ -24,6 +23,6 @@
         <span>
             {{'skills.contact'|translate}} </span>
 
-        <button id="talkBtn" class="talk-btn">{{'skills.btn'|translate}}</button>
+        <button id="talkBtn" class="talk-btn" (click)="scrollToSection('myContact')">{{'skills.btn'|translate}}</button>
     </div>
 </section>

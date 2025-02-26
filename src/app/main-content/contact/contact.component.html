@@ -6,7 +6,7 @@
         <div class="contact-text">
             <span>{{'contact.problem' | translate}}</span>
             <p>{{'contact.cnt-me' | translate}}<br></p>
-            <p>{{'contact.need-me' | translate}}<b>{{'contact.me' | translate}}</b></p>
+            <p>{{'contact.need-me' | translate}}<b> {{'contact.me' | translate}}</b></p>
         </div>
 
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-input">
@@ -46,7 +46,11 @@
             <div class="input-container">
                 <label>
                     <input type="checkbox" [(ngModel)]="contactData.policy" name="policy" required />
-                    <span class="privacy-text">{{'contact.privacyPolicy' | translate}}</span>
+                    <span class="privacy-text">
+                        {{'contact.privacyPolicy' | translate}}
+                        <a [routerLink]="['/policy']"> {{'contact.privacyPolicy2' | translate}}</a>
+                        {{'contact.privacyPolicy3' | translate}}
+                    </span>
                 </label>
                 @if (!contactData.policy && contactForm.submitted) {
                 <span class="warning">{{'contact.policy-warning' | translate}}</span>

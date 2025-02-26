@@ -49,6 +49,8 @@
         "msg-warning": "Please enter a Message",
         "plchol-sub": "Your Message...",
         "send-btn": "Send Message",
-        "privacyPolicy": "I've read the privacy policy and agree to the processing of my data as outlined."
+        "privacyPolicy": "I've read",
+        "privacyPolicy2": "privacy policy",
+        "privacyPolicy3": "and agree to the processing of my data as outlined."
     }
 }
