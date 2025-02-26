@@ -17,7 +17,7 @@ export class ProjectComponent {
       type: 'JavaScript | HTML | CSS | Api',
       description: 'portfolio.pokedex',
       link: {
-        liveTest: '',
+        liveTest: 'https://michael-schwittay.de/Pokedex/',
         github: 'https://github.com/MichaelS96/Pokedex',
       },
     },
@@ -27,7 +27,7 @@ export class ProjectComponent {
       type: 'JavaScript | HTML | CSS',
       description: 'portfolio.polloloco',
       link: {
-        liveTest: '/',
+        liveTest: 'https://michael-schwittay.de/ElPolloLoco/',
         github: 'https://github.com/MichaelS96/El-Pollo-Loco',
       },
     },
