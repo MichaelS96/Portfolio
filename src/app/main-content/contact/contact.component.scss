@@ -36,7 +36,14 @@ input[type="submit"] {
     }
 }
 
-// Allgemeine Container-Styles
+.purple{
+    position: absolute;
+    top: -400px;
+    right: -400px;
+    width: 540px;
+    rotate: 240deg;
+}
+
 .contact {
     border-radius: 5px;
     background-color: #141d2f;
