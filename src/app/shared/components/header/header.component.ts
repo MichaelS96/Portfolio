@@ -18,8 +18,8 @@ export class HeaderComponent {
 
   constructor(private router: Router, private translate: TranslateService) { }
 
-  navigateToHome() {
-    this.router.navigate(['/']);
+  navigateToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   toggleDialog() {

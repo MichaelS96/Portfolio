@@ -42,13 +42,12 @@
             <span class="warning">{{'contact.msg-warning' | translate}}</span>
             }
 
-            <!-- Privacy checkbox -->
             <div class="input-container">
                 <label>
                     <input type="checkbox" [(ngModel)]="contactData.policy" name="policy" required />
                     <span class="privacy-text">
                         {{'contact.privacyPolicy' | translate}}
-                        <a [routerLink]="['/policy']"> {{'contact.privacyPolicy2' | translate}}</a>
+                        <a [routerLink]="['policy']"> {{'contact.privacyPolicy2' | translate}}</a>
                         {{'contact.privacyPolicy3' | translate}}
                     </span>
                 </label>

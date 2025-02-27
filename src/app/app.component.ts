@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { TranslateService, TranslatePipe, TranslateDirective } from "@ngx-translate/core";
@@ -14,6 +14,7 @@ import { TranslateService, TranslatePipe, TranslateDirective } from "@ngx-transl
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
+    RouterModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,28 +1,29 @@
+import { Component, inject } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslatePipe } from "@ngx-translate/core";
 import { RouterModule } from '@angular/router';
-import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
-
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslatePipe, RouterModule],
+  imports: [CommonModule, FormsModule, TranslatePipe,RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
   http = inject(HttpClient);
+  router = inject(Router);
 
   contactData = {
     name: '',
     email: '',
     message: '',
     policy: false
-  }
+  };
 
   mailTest = false;
 
@@ -37,16 +38,20 @@ export class ContactComponent {
     },
   };
 
+  constructor() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.scrollToTop();
+      }
+    });
+  }
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.contactData.policy && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
+          next: () => ngForm.resetForm(),
+          error: error => console.error(error),
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
@@ -57,6 +62,4 @@ export class ContactComponent {
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
 }
-
