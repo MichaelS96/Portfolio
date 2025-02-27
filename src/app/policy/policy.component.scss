@@ -25,6 +25,17 @@ section {
     }
 }
 
+.back-home-btn {
+    display: flex;
+    justify-content: end;
+
+    img {
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 850px) {
     section {
         >h2 {

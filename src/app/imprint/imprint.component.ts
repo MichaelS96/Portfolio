@@ -14,8 +14,5 @@ export class ImprintComponent {
 
   constructor(private router: Router) { }
 
-  // navigateToHome() {
-  //   this.router.navigate(['/']);
-  // }
 
 }
