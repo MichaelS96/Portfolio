@@ -135,7 +135,7 @@ h4 {
 
 @media (max-width: 1400px) {
     .skills-row {
-        gap: 60px;
+        gap: 95px;
         width: 400px;
         flex-wrap: wrap;
     }
@@ -169,10 +169,11 @@ h4 {
     }
 
     .skills-row {
+        gap: 50px;
         display: flex;
         justify-content: center;
         margin-top: 40px;
-        gap: 70px;
+        gap: 100px;
         width: 100%;
     }
 }
