@@ -69,9 +69,9 @@ export class HeaderComponent {
     }
   }
 
-  scrollToSectionDialog(sectionId: string) {
+  scrollToSectionDialog(sectionId: string, event: MouseEvent) {
+    event.preventDefault();
     this.scrollToSection(sectionId);
-    this.toggleDialog();
   }
 
   changeLanguage(language: string) {

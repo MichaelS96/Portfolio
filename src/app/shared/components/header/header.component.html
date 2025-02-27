@@ -4,14 +4,22 @@
             <img src="./assets/img/header/logo.png" alt="Logo" (click)="navigateToTop()">
         </div>
         <nav class="header-a">
-            <a [class.active]="activeSection === 'aboutMe'"
-                (click)="scrollToSection('aboutMe')">{{'header.me'|translate}}</a>
-            <a [class.active]="activeSection === 'mySkills'"
-                (click)="scrollToSection('mySkills')">{{'header.skills'|translate}}</a>
-            <a [class.active]="activeSection === 'myPortfolio'"
-                (click)="scrollToSection('myPortfolio')">{{'header.portfolio'|translate}}</a>
-            <a [class.active]="activeSection === 'myContact'"
-                (click)="scrollToSection('myContact')">{{'header.contact'|translate}}</a>
+            <a [class.active]="activeSection === 'aboutMe'" href="#aboutMe"
+                (click)="scrollToSectionDialog('aboutMe', $event)">
+                {{'header.me' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'mySkills'" href="#mySkills"
+                (click)="scrollToSectionDialog('mySkills', $event)">
+                {{'header.skills' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'myPortfolio'" href="#myPortfolio"
+                (click)="scrollToSectionDialog('myPortfolio', $event)">
+                {{'header.portfolio' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'myContact'" href="#myContact"
+                (click)="scrollToSectionDialog('myContact', $event)">
+                {{'header.contact' | translate}}
+            </a>
             <div class="translate">
                 <img src="./assets/img/header/englisch.png" alt="englisch" (click)="changeLanguage('en')">
                 <a (click)="changeLanguage('en')">EN</a>
@@ -29,14 +37,22 @@
 
     <div class="dialog" #dialog>
         <div class="open-dialog">
-            <a [class.active]="activeSection === 'aboutMe'"
-                (click)="scrollToSectionDialog('aboutMe')">{{'header.me'|translate}}</a>
-            <a [class.active]="activeSection === 'mySkills'"
-                (click)="scrollToSectionDialog('mySkills')">{{'header.skills'|translate}}</a>
-            <a [class.active]="activeSection === 'myPortfolio'"
-                (click)="scrollToSectionDialog('myPortfolio')">{{'header.portfolio'|translate}}</a>
-            <a [class.active]="activeSection === 'myContact'"
-                (click)="scrollToSectionDialog('myContact')">{{'header.contact'|translate}}</a>
+            <a [class.active]="activeSection === 'aboutMe'" href="#aboutMe"
+                (click)="scrollToSectionDialog('aboutMe', $event)">
+                {{'header.me' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'mySkills'" href="#mySkills"
+                (click)="scrollToSectionDialog('mySkills', $event)">
+                {{'header.skills' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'myPortfolio'" href="#myPortfolio"
+                (click)="scrollToSectionDialog('myPortfolio', $event)">
+                {{'header.portfolio' | translate}}
+            </a>
+            <a [class.active]="activeSection === 'myContact'" href="#myContact"
+                (click)="scrollToSectionDialog('myContact', $event)">
+                {{'header.contact' | translate}}
+            </a>
             <div class="translate-dialog">
                 <img src="./assets/img/header/englisch.png" alt="englisch" (click)="changeLanguage('en')">
                 <a (click)="changeLanguage('en')">EN</a>
