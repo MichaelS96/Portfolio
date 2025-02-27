@@ -69,9 +69,18 @@ export class HeaderComponent {
     }
   }
 
-  scrollToSectionDialog(sectionId: string, event: MouseEvent) {
-    event.preventDefault();
-    this.scrollToSection(sectionId);
+  scrollToSectionDialog(sectionId: string, event: Event) {
+    event.preventDefault();  
+
+    this.router.navigate(['/']).then(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    });
   }
 
   changeLanguage(language: string) {
