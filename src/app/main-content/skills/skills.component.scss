@@ -14,11 +14,11 @@ h4 {
 
 .skills {
     position: relative;
-    height: 80vh;
+    width: 100vw;
+    margin-top: 100px;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 100px;
     max-width: 1920px;
     z-index: 80;
@@ -47,19 +47,33 @@ h4 {
 .skills-row {
     display: flex;
     gap: 100px;
-    width: 100%;
+    width: 562px;
     max-width: 100%;
+    padding-top: 50px;
     flex-wrap: wrap;
     z-index: 80;
-    justify-content: center;
 
     >div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        width: auto;
-        height: auto;
+        gap: 10px;
+        width: 80px;
+        height: 80px;
+
+        >img {
+            transition: transform 0.2s;
+        }
+
+        &:hover {
+            >img {
+                transform: translateY(-10px);
+            }
+        }
+
+        >p {
+            text-align: center;
+        }
     }
 }
 
@@ -121,8 +135,9 @@ h4 {
 
 @media (max-width: 1400px) {
     .skills-row {
-        gap: 80px;
+        gap: 60px;
         width: 400px;
+        flex-wrap: wrap;
     }
 }
 
@@ -135,16 +150,30 @@ h4 {
 
 @media (max-width: 960px) {
     .skills {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 100px;
         flex-direction: column-reverse;
         align-items: center;
-        height: auto;
-        padding: 50px 20px;
+    }
+
+    .skills-sektion {
+        padding-left: 0px;
+        width: 80%;
     }
 
     .skills-text {
         max-width: 100%;
         padding-right: 0;
         width: 80%;
+    }
+
+    .skills-row {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 70px;
+        width: 100%;
     }
 }
 
@@ -174,8 +203,8 @@ h4 {
     }
 
     .skills-row {
-        gap: 45px;
-
+        padding-top: 0;
+        gap: 80px;
         >div {
             >img {
                 width: 40px;
@@ -188,8 +217,11 @@ h4 {
         }
     }
 
-    .looking {
+    .skills-sektion{
+        width: 280px;
+    }
 
+    .looking {
         h3,
         h4 {
             font-size: 18px;

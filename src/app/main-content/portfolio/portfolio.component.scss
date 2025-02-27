@@ -51,6 +51,11 @@ h2 {
 }
 
 @media (max-width: 960px) {
+.skills-sektion{
+    padding-left: 50px;
+}
+
+
     .portfolio {
         padding-left: 0;
         padding-right: 0;
@@ -59,7 +64,7 @@ h2 {
     .blue {
         width: 700px;
         top: -400px;
-        left: 350px;
+        left: 500px;
     }
 
     .green2 {
