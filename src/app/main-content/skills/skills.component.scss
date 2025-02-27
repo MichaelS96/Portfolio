@@ -205,6 +205,7 @@ h4 {
     .skills-row {
         padding-top: 0;
         gap: 80px;
+
         >div {
             >img {
                 width: 40px;
@@ -217,11 +218,12 @@ h4 {
         }
     }
 
-    .skills-sektion{
+    .skills-sektion {
         width: 280px;
     }
 
     .looking {
+
         h3,
         h4 {
             font-size: 18px;

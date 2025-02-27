@@ -55,28 +55,19 @@ export class HeaderComponent {
     this.activeSection = currentSectionId;
   }
 
-  scrollToSection(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const headerOffset = 130;
-      const elementPosition = section.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  }
-
   scrollToSectionDialog(sectionId: string, event: Event) {
-    event.preventDefault();  
+    event.preventDefault();
+
+    const headerOffset = 130;
 
     this.router.navigate(['/']).then(() => {
       const element = document.getElementById(sectionId);
       if (element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
         window.scrollTo({
-          top: element.offsetTop,
+          top: offsetPosition,
           behavior: 'smooth',
         });
       }
