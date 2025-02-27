@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe, TranslateDirective } from "@ngx-translate/core";
-
+import 'aos/dist/aos.css'; 
 
 @Component({
   selector: 'app-skills',
