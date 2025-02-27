@@ -8,7 +8,6 @@ import { AppComponent } from '../app.component';
 import { FeedbackComponent } from './portfolio/feedback/feedback.component';
 import { ContactComponent } from "./contact/contact.component";
 
-
 @Component({
   selector: 'app-main-content',
   standalone: true,
