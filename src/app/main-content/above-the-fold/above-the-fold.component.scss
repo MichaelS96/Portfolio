@@ -21,7 +21,7 @@ section {
     position: absolute;
     top: 150px;
     left: 0;
-    margin-left: -250px;
+    margin-left: -330px;
 }
 
 .blue {
@@ -35,6 +35,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .full-name {

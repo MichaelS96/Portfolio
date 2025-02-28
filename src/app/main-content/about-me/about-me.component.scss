@@ -58,19 +58,6 @@
     transition: top 0.2s ease-in-out;
 }
 
-// .background {
-//     position: absolute;
-//     top: 550px;
-//     width: 100vw;
-//     max-width: 1920px;
-//     z-index: 3;
-
-//     >img {
-//         width: 100%;
-//         object-fit: cover;
-//     }
-// }
-
 .background {
     position: absolute;
     left: 0;
@@ -115,7 +102,7 @@
     .about-me-content {
         >span {
             font-size: 16px;
-            z-index: 80;
+            z-index: 8;
         }
     }
 
