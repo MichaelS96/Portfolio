@@ -74,6 +74,13 @@ export class HeaderComponent {
     });
   }
 
+  scrollToSectionAndCloseDialog(sectionId: string, event: Event) {
+    event.preventDefault();
+    
+    this.scrollToSectionDialog(sectionId, event);
+    this.toggleDialog(); 
+  }
+
   changeLanguage(language: string) {
     this.translate.use(language);
   }

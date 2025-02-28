@@ -38,19 +38,19 @@
     <div class="dialog" #dialog>
         <div class="open-dialog">
             <a [class.active]="activeSection === 'aboutMe'" href="#aboutMe"
-                (click)="scrollToSectionDialog('aboutMe', $event)">
+                (click)="scrollToSectionAndCloseDialog('aboutMe', $event)">
                 {{'header.me' | translate}}
             </a>
             <a [class.active]="activeSection === 'mySkills'" href="#mySkills"
-                (click)="scrollToSectionDialog('mySkills', $event)">
+                (click)="scrollToSectionAndCloseDialog('mySkills', $event)">
                 {{'header.skills' | translate}}
             </a>
             <a [class.active]="activeSection === 'myPortfolio'" href="#myPortfolio"
-                (click)="scrollToSectionDialog('myPortfolio', $event)">
+                (click)="scrollToSectionAndCloseDialog('myPortfolio', $event)">
                 {{'header.portfolio' | translate}}
             </a>
             <a [class.active]="activeSection === 'myContact'" href="#myContact"
-                (click)="scrollToSectionDialog('myContact', $event)">
+                (click)="scrollToSectionAndCloseDialog('myContact', $event)">
                 {{'header.contact' | translate}}
             </a>
             <div class="translate-dialog">
