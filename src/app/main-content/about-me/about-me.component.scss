@@ -74,14 +74,39 @@
 .background {
     position: absolute;
     left: 0;
-    top: 2680px;
-    width: 100vw; 
-    height: 100vh; 
-    background-image: url("/assets/img/background/about-me-bow.png");
+    top: 2635px;
+    width: 100vw;
+    height: 2300px;
+    background-image: url("/assets/img/background/about-me-bow(1).svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 3; 
+    z-index: 3;
+}
+
+@media (max-width: 1920px) {
+    .background {
+        top: 1575px;
+        height: 130vh;
+    }
+}
+
+@media (max-width: 1500px) {
+    .background {
+        top: 1500px;
+    }
+}
+
+@media (max-width: 960px) {
+    .background {
+        top: 1310px;
+    }
+}
+
+@media (max-width: 500px) {
+    .background {
+        top: 1030px;
+    }
 }
 
 .icon img {
@@ -118,9 +143,9 @@
         }
     }
 
-    .background {
-        top: 550px;
-    }
+    // .background {
+    //     top: 550px;
+    // }
 }
 
 @media (max-width: 1100px) {
@@ -168,9 +193,9 @@
         width: 80%;
     }
 
-    .background {
-        top: 450px;
-    }
+    // .background {
+    //     top: 450px;
+    // }
 
     .about-me-content {
         >span {
@@ -199,9 +224,9 @@
         top: 1900px;
     }
 
-    .background {
-        top: 250px;
-    }
+    // .background {
+    //     top: 250px;
+    // }
 
     .about-me-content {
         width: 280px;
