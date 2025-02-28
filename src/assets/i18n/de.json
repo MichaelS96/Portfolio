@@ -8,7 +8,8 @@
     "above-the-fold": {
         "iam": "Ich bin",
         "job": "FRONTEND ENTWICKLER",
-        "talk-btn": "Lass uns Reden"
+        "talk-btn": "Lass uns Reden",
+        "down":"Scroll runter"
     },
     "about-me": {
         "me": "Über mich",
