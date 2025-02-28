@@ -24,7 +24,7 @@ export class ContactComponent {
     message: '',
     policy: false
   };
-
+  emailSent = false;
   mailTest = false;
 
   post = {
@@ -48,15 +48,23 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && this.contactData.policy && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: () => ngForm.resetForm(),
-          complete: () => {}
-        });
+        this.http.post(this.post.endPoint, this.post.body(this.contactData))
+            .subscribe({
+                next: () => {
+                    ngForm.resetForm();
+                    this.emailSent = true;
+                },
+                complete: () => {}
+            });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
+        ngForm.resetForm();
+        this.emailSent = true;
     }
-  }
+}
+
+closeDialog() {
+    this.emailSent = false;
+}
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

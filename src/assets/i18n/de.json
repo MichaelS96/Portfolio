@@ -52,7 +52,9 @@
         "send-btn": "Nachricht versenden",
         "privacyPolicy": "Ich habe die",
         "privacyPolicy2": "Datenschutzerklärung",
-        "privacyPolicy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+        "privacyPolicy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "emailsent":"Vielen Dank für Ihre E-Mail. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+        "emailok":":)"
     },
     "imprint":{
         "imprint":"Impressum",

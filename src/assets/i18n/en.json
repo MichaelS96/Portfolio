@@ -52,7 +52,9 @@
         "send-btn": "Send Message",
         "privacyPolicy": "I've read",
         "privacyPolicy2": "privacy policy",
-        "privacyPolicy3": "and agree to the processing of my data as outlined."
+        "privacyPolicy3": "and agree to the processing of my data as outlined.",
+        "emailsent":"Thank you for your email. I will get back to you as soon as possible.",
+        "emailok":":)"
     },
     "imprint":{
         "imprint":"Imprint",
