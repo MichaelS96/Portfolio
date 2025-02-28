@@ -53,5 +53,9 @@
         "privacyPolicy": "Ich habe die",
         "privacyPolicy2": "Datenschutzerklärung",
         "privacyPolicy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    },
+    "imprint":{
+        "imprint":"Impressum",
+        "contact":"Kontakt"
     }
 }
