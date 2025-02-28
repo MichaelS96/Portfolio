@@ -84,43 +84,19 @@
     z-index: 3;
 }
 
-@media (max-width: 1920px) {
-    .background {
-        top: 1575px;
-        height: 130vh;
-    }
-}
-
-@media (max-width: 1500px) {
-    .background {
-        top: 1500px;
-    }
-}
-
-@media (max-width: 960px) {
-    .background {
-        top: 1310px;
-    }
-}
-
-@media screen and (max-width: 500px) and (min-height: 600px) and (max-height: 799px) {
-    .background {
-        top: 1030px;
-    }
-}
-
-@media screen and (max-width: 500px) and (min-height: 800px) {
-    .background {
-        top: 1190px;
-    }
-}
-
 .icon img {
     transition: transform 0.2s ease-in-out;
 }
 
 .icon:hover img {
     transform: scale(1.1);
+}
+
+@media (max-width: 1920px) {
+    .background {
+        top: 1575px;
+        height: 130vh;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -149,9 +125,9 @@
         }
     }
 
-    // .background {
-    //     top: 550px;
-    // }
+    .background {
+        top: 1500px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -199,9 +175,9 @@
         width: 80%;
     }
 
-    // .background {
-    //     top: 450px;
-    // }
+    .background {
+        top: 1310px;
+    }
 
     .about-me-content {
         >span {
@@ -230,10 +206,6 @@
         top: 1900px;
     }
 
-    // .background {
-    //     top: 250px;
-    // }
-
     .about-me-content {
         width: 280px;
     }
@@ -247,6 +219,18 @@
     .icon {
         >span {
             font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 500px) and (min-height: 600px) and (max-height: 799px) {
+        .background {
+            top: 1030px;
+        }
+    }
+
+    @media screen and (max-width: 500px) and (min-height: 800px) {
+        .background {
+            top: 1190px;
         }
     }
 }
