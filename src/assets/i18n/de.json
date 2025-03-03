@@ -58,6 +58,7 @@
     },
     "imprint":{
         "imprint":"Impressum",
-        "contact":"Kontakt"
+        "contact":"Kontakt",
+        "mobile":"Telefon"
     }
 }

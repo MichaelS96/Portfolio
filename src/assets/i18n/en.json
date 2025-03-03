@@ -58,6 +58,7 @@
     },
     "imprint":{
         "imprint":"Imprint",
-        "contact":"Contact"
+        "contact":"Contact",
+        "mobile":"Mobile"
     }
 }
