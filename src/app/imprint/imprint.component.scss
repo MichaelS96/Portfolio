@@ -3,7 +3,7 @@ section {
     width: 100vw;
     max-width: 1920px;
     margin-top: 100px;
-    height: 62vh;
+    height: calc(100vh - 90px - 250px);
     color: white;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ section {
 
     .back-home-btn {
         img {
-            width: 40px; 
+            width: 40px;
             height: auto;
             cursor: pointer;
         }
