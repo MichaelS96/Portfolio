@@ -47,52 +47,36 @@ h2 {
 }
 
 .seperator-small{
-    height: 12px;
     position: absolute;
-    left: 0;
+    background-color: #9747FF;
+    width: 60px;
+    height: 4px;
+    left: 250px;
+    z-index: 4;
+    border-radius: 3px;
 }
 
-@media (max-width: 500px) {
-    .seperator-small{
-        left: -290px;
-    }
-}
-
-.seperator {
-    top: 50px;
+.seperator{
     position: absolute;
-    right: -934px;
-    width: 1726px;
-    height: 14px;
-    z-index: 5;
+    background-color: #9747FF;
+    width: 1680px;
+    height: 4px;
     left: 70%;
+    z-index: 4;
+    border-radius: 3px;
 }
 
-@media (max-width: 1300px) {
-    .seperator {
-        left: 70%;
+@media (max-width: 960px){
+    .seperator{
+        left: 540px;
     }
 }
 
-@media (max-width: 960px) {
-    .seperator {
-        left: 84%;
-    }
-}
-
-@media (max-width: 730px) {
-    .seperator {
-        left: 88%;
-    }
-}
-
-@media (max-width: 580px) {
-    .seperator {
+@media (max-width: 730px){
+    .seperator{
         display: none;
     }
 }
-
-
 
 @media (max-width: 1030px) {
     .headline {
