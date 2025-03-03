@@ -59,7 +59,7 @@ h2 {
 .seperator{
     position: absolute;
     background-color: #9747FF;
-    width: 1680px;
+    width: 1710px;
     height: 4px;
     left: 70%;
     z-index: 4;
@@ -68,13 +68,32 @@ h2 {
 
 @media (max-width: 960px){
     .seperator{
-        left: 540px;
+        left: 83%;
     }
 }
 
 @media (max-width: 730px){
     .seperator{
         display: none;
+    }
+}
+
+@media (max-width: 960px){
+    .seperator-small{
+        left: 10%;
+    }
+}
+
+@media (max-width: 730px){
+    .seperator-small{
+        left: 2%;
+    }
+}
+
+@media (max-width: 540px){
+    .seperator-small{
+        width: 30px;
+        left: 1%;
     }
 }
 

@@ -12,6 +12,16 @@ h4 {
     color: #9747FF;
 }
 
+.seperator {
+    position: absolute;
+    background-color: #00BEE8;
+    width: 1340px;
+    height: 4px;
+    left: 66%;
+    z-index: 4;
+    border-radius: 3px;
+}
+
 .skills {
     position: relative;
     width: 100vw;
@@ -224,5 +234,27 @@ h4 {
         h4 {
             font-size: 18px;
         }
+    }
+}
+
+.seperator {
+    @media (max-width: 1200px) {
+        display: none;
+    }
+
+    @media (max-width: 960px) {
+        display: block;
+    }
+
+    @media (max-width: 870px) {
+        left: 70%;
+    }
+
+    @media (max-width: 720px) {
+        left: 73%;
+    }
+
+    @media (max-width: 610px) {
+        left: 76%;
     }
 }
