@@ -2,7 +2,7 @@
     position: absolute;
     top: -400px;
     left: 900px;
-    z-index: 7;
+    z-index: 4;
 }
 
 .green2 {
@@ -20,6 +20,7 @@
 }
 
 .project {
+    z-index: 4;
     margin-top: 30px;
 }
 
@@ -27,6 +28,8 @@ h2 {
     font-size: 85px;
     color: white;
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
 }
 
 .headline {
@@ -34,12 +37,62 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
+    z-index: 5;
 
     >p {
         color: white;
         margin-top: 20px;
+        z-index: 4;
     }
 }
+
+.seperator-small{
+    height: 12px;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 500px) {
+    .seperator-small{
+        left: -290px;
+    }
+}
+
+.seperator {
+    top: 50px;
+    position: absolute;
+    right: -934px;
+    width: 1726px;
+    height: 14px;
+    z-index: 5;
+    left: 70%;
+}
+
+@media (max-width: 1300px) {
+    .seperator {
+        left: 70%;
+    }
+}
+
+@media (max-width: 960px) {
+    .seperator {
+        left: 84%;
+    }
+}
+
+@media (max-width: 730px) {
+    .seperator {
+        left: 88%;
+    }
+}
+
+@media (max-width: 580px) {
+    .seperator {
+        display: none;
+    }
+}
+
+
 
 @media (max-width: 1030px) {
     .headline {
@@ -51,9 +104,9 @@ h2 {
 }
 
 @media (max-width: 960px) {
-.skills-sektion{
-    padding-left: 50px;
-}
+    .skills-sektion {
+        padding-left: 50px;
+    }
 
 
     .portfolio {

@@ -27,6 +27,7 @@
         "btn": "Get in touch"
     },
     "portfolio": {
+        "header":"Portfolio",
         "under-head": "Discover a selection of my work here. Interact with the projects to see my skills in action.",
         "pokedex": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information.",
         "polloloco": "Jump, run, and throw in an exciting game with an object-oriented concept. Join Pepe on his adventure, collect coins and spicy Tabasco salsa to face off against the crazy hen in the ultimate duel!",

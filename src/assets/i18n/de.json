@@ -27,6 +27,7 @@
         "btn": "In Kontakt treten"
     },
     "portfolio": {
+        "header":"Portfolio",
         "under-head": "Entdecke eine Auswahl meiner Arbeiten hier. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
         "pokedex": "Auf Grundlage der PokéAPI, einer benutzerfreundlichen Bibliothek, die detaillierte Informationen zu Pokémon erfasst und bereitstellt.",
         "polloloco": "Springen, Rennen und Werfen ein spannendes Spiel mit einem objektorientierten Konzept. Begleite Pepe auf seinem Abenteuer, sammle Münzen und scharfe Tabasco-Salsa, um dich der verrückten Henne im ultimativen Duell zu stellen!",

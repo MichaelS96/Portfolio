@@ -147,49 +147,14 @@ a {
     color: #00BEE8;
 }
 
-.seperator {
+.seperator{
     position: absolute;
-    right: -934px;
-    width: 1726px;
-    height: 14px;
-    z-index: 1;
+    background-color: #00BEE8;
+    width: 1670px;
+    height: 4px;
     left: 60%;
-}
-
-@media (max-width: 1300px) {
-    .seperator {
-        left: 63%;
-    }
-}
-
-@media (max-width: 870px) {
-    .seperator {
-        left: 66%;
-    }
-}
-
-@media (max-width: 700px) {
-    .seperator {
-        left: 69%;
-    }
-}
-
-@media (max-width: 580px) {
-    .seperator {
-        left: 72%;
-    }
-}
-
-@media (max-width: 430px) {
-    .seperator {
-        left: 75%;
-    }
-}
-
-@media (max-width: 370px) {
-    .seperator {
-        left: 79%;
-    }
+    z-index: 4;
+    border-radius: 3px;
 }
 
 .privacy-text {
@@ -305,5 +270,31 @@ input[type="checkbox"] {
 
     .contact-text {
         width: 250px;
+    }
+}
+
+.seperator {
+    @media (max-width: 1370px) {
+        left: 63%;
+    }
+    
+    @media (max-width: 885px) {
+        left: 66%;
+    }
+    
+    @media (max-width: 700px) {
+        left: 68%;
+    }
+    
+    @media (max-width: 550px) {
+        left: 70%;
+    }
+    
+    @media (max-width: 440px) {
+        left: 73%;
+    }
+    
+    @media (max-width: 370px) {
+        left: 77%;
     }
 }
