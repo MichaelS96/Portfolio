@@ -61,7 +61,7 @@
 .background {
     position: absolute;
     left: 0;
-    top: 2635px;
+    top: 2640px;
     width: 100vw;
     height: 2300px;
     background-image: url("/assets/img/background/about-me-bow(1).svg");
@@ -218,6 +218,12 @@
     @media screen and (max-width: 500px) and (min-height: 800px) {
         .background {
             top: 1190px;
+        }
+    }
+
+    @media screen and (min-width: 3500px){
+        .background{
+            top: 1600px ;
         }
     }
 }
