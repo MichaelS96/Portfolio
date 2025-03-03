@@ -1,6 +1,6 @@
 .about-me {
     max-width: 1920px;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     color: white;
     display: flex;
@@ -62,7 +62,7 @@
     position: absolute;
     left: 0;
     top: 2640px;
-    width: 100vw;
+    width: 100%;
     height: 2300px;
     background-image: url("/assets/img/background/about-me-bow(1).svg");
     background-size: cover;
@@ -221,7 +221,7 @@
         }
     }
 
-    @media screen and (min-width: 3500px){
+    @media screen and (height: 1080px){
         .background{
             top: 1600px ;
         }
