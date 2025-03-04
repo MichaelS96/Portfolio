@@ -84,21 +84,15 @@ section {
 
 .seperator{
     background-color: #70E61C;
-    width: 985px;
+    width: 1280px;
     height: 4px;
     border-radius: 3px;
     position: absolute;
-    left: 0;
+    left: -1256px;
     bottom: 70px;
 }
 
-@media (max-width: 1920px) {
-    .seperator {
-        width: 45px; /* Beispielwert, passe ihn nach Bedarf an */
-        height: 6px; /* Beispielwert, falls du eine Änderung möchtest */
-        bottom: 70px; /* Beispielwert für eine neue Position */
-    }
-}
+
 
 .links {
     position: absolute;
