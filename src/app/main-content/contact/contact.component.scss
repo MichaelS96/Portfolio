@@ -152,7 +152,7 @@ a {
     background-color: #00BEE8;
     width: 1710px;
     height: 4px;
-    left: 62%;
+    left: 63%;
     z-index: 4;
     border-radius: 3px;
 }
@@ -275,7 +275,7 @@ input[type="checkbox"] {
 
 .seperator {
     @media (max-width: 1370px) {
-        left: 63%;
+        left: 66%;
     }
     
     @media (max-width: 885px) {
@@ -283,7 +283,7 @@ input[type="checkbox"] {
     }
     
     @media (max-width: 700px) {
-        left: 68%;
+        left: 70%;
     }
     
     @media (max-width: 550px) {
@@ -295,6 +295,6 @@ input[type="checkbox"] {
     }
     
     @media (max-width: 370px) {
-        left: 77%;
+        left: 72%;
     }
 }
