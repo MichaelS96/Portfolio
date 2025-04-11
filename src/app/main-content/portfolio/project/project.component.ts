@@ -37,8 +37,8 @@ export class ProjectComponent {
       type: 'JavaScript | HTML | CSS | Angular',
       description: '',
       link: {
-        liveTest: '',
-        github: '',
+        liveTest: 'https://michael-schwittay.de/joinpro/',
+        github: 'https://github.com/MichaelS96/Join',
       },
     },
   ]
