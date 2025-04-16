@@ -12,6 +12,16 @@ export class ProjectComponent {
 
   projects: { name: string, image: string, type: string, description: string, link: { liveTest: string, github: string } }[] = [
     {
+      name: 'Join',
+      image: './assets/img/projects/joyn.png',
+      type: 'JavaScript | HTML | CSS | Angular',
+      description: 'portfolio.join',
+      link: {
+        liveTest: 'https://michael-schwittay.de/joinpro/',
+        github: 'https://github.com/MichaelS96/Join',
+      },
+    },
+    {
       name: 'Pokedex',
       image: './assets/img/projects/pokedex.png',
       type: 'JavaScript | HTML | CSS | Api',
@@ -30,16 +40,6 @@ export class ProjectComponent {
         liveTest: 'https://michael-schwittay.de/ElPolloLoco/',
         github: 'https://github.com/MichaelS96/El-Pollo-Loco',
       },
-    },
-    {
-      name: 'Joyn',
-      image: './assets/img/projects/joyn.png',
-      type: 'JavaScript | HTML | CSS | Angular',
-      description: '',
-      link: {
-        liveTest: 'https://michael-schwittay.de/joinpro/',
-        github: 'https://github.com/MichaelS96/Join',
-      },
-    },
+    }
   ]
 }

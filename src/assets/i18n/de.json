@@ -8,8 +8,8 @@
     "above-the-fold": {
         "iam": "Ich bin",
         "job": "FRONTEND ENTWICKLER",
-        "talk-btn": "Lass uns Reden",
-        "down":"Scroll runter"
+        "talk-btn": "Lassen Sie uns reden",
+        "down": "Scrollen Sie runter"
     },
     "about-me": {
         "me": "Über mich",
@@ -22,16 +22,16 @@
         "header": "Skills",
         "under-header": "Meine Reise hat mich dazu geführt, an verschiedenen Projekten zu arbeiten und eine Vielzahl von Frontend-Technologien und Konzepten anzuwenden. Ich bin offen dafür, neue Technologien und Methoden zu übernehmen, um meine Fähigkeiten kontinuierlich zu verbessern und im sich ständig weiterentwickelnden Bereich der Webentwicklung immer einen Schritt voraus zu bleiben.",
         "looking": "Suche nach",
-        "another": "anderen Skills?",
+        "another": "anderem Skill?",
         "contact": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
         "btn": "In Kontakt treten"
     },
     "portfolio": {
-        "header":"Portfolio",
-        "under-head": "Entdecke eine Auswahl meiner Arbeiten hier. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "header": "Portfolio",
+        "under-head": "Entdecken Sie hier eine Auswahl meiner Arbeiten. Interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
         "pokedex": "Auf Grundlage der PokéAPI, einer benutzerfreundlichen Bibliothek, die detaillierte Informationen zu Pokémon erfasst und bereitstellt.",
-        "polloloco": "Springen, Rennen und Werfen ein spannendes Spiel mit einem objektorientierten Konzept. Begleite Pepe auf seinem Abenteuer, sammle Münzen und scharfe Tabasco-Salsa, um dich der verrückten Henne im ultimativen Duell zu stellen!",
-        "joyn": ""
+        "polloloco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Helfen Sie Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen",
+        "join": "Ein sehr einfaches System zur Verwaltung von Kundenbeziehungen, das die grundlegenden Funktionen zum Erstellen, Lesen, Aktualisieren und Löschen von Daten bietet."
     },
     "feedback": {
         "feeback-msg-1": "",
@@ -39,27 +39,27 @@
     },
     "contact": {
         "header": "Kontakt",
-        "problem": "Hast du ein Problem zu lösen?",
-        "cnt-me": "Kontaktiere mich über dieses Formular ich freue mich darauf, von dir zu hören, deine Ideen kennenzulernen und mit meiner Arbeit zu deinen Projekten beizutragen.",
-        "need-me": "Brauchst du einen Frontend-Entwickler?",
-        "me": "Kontaktiere mich!",
-        "name-warning": "Bitte gib deinen Namen ein",
+        "problem": "Haben Sie ein Problem zu lösen?",
+        "cnt-me": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "need-me": "Benötigen Sie einen Frontend-Entwickler?",
+        "me": "Kontaktieren Sie mich!",
+        "name-warning": "Bitte geben Sie Ihren Namen ein",
         "plchol-name": "Ihr Name...",
-        "email-warning": "Bitte gib eine E-Mail-Adresse ein",
+        "email-warning": "Bitte geben Sie eine E-Mail-Adresse ein",
         "plchol-email": "Ihre Email...",
         "sub": "Betreff",
-        "msg-warning": "Bitte gib eine Nachricht ein.",
+        "msg-warning": "Bitte geben Sie eine Nachricht ein.",
         "plchol-sub": "Ihre Nachricht...",
         "send-btn": "Nachricht versenden",
         "privacyPolicy": "Ich habe die",
         "privacyPolicy2": "Datenschutzerklärung",
         "privacyPolicy3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        "emailsent":"Vielen Dank für Ihre E-Mail. Ich werde mich so schnell wie möglich bei Ihnen melden.",
-        "emailok":":)"
+        "emailsent": "Vielen Dank für Ihre E-Mail. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+        "emailok": ":)"
     },
-    "imprint":{
-        "imprint":"Impressum",
-        "contact":"Kontakt",
-        "mobile":"Telefon"
+    "imprint": {
+        "imprint": "Impressum",
+        "contact": "Kontakt",
+        "mobile": "Telefon"
     }
 }
